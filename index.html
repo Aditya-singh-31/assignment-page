@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Assessment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h3 class="title">EDIT ASSESSMENT</h3>
+
+    <div class="step-indicator">
+        <div class="step active">1</div>
+        <div class="step active">2</div>
+        <div class="step inactive">3</div>
+    </div>
+
+    <form>
+        <div class="form-group">
+            <label class="label">Task Description</label>
+            <textarea class="textarea" rows="4" placeholder="Task..."></textarea>
+        </div>
+
+        <div class="form-group">
+            <p class="existing-file">EXISTING <a href="#">QuestionUpdated.png</a></p>
+        </div>
+
+        <div class="form-group">
+            <label class="label">Upload Image</label>
+            <div class="file-upload-box" onclick="document.getElementById('fileInput').click();">
+                <input type="file" id="fileInput" hidden>
+                <p class="upload-text">Choose a file or drag it here.</p>
+            </div>
+        </div>
+
+        <div class="button-group">
+            <button type="button" class="btn btn-secondary">Previous</button>
+            <button type="button" class="btn btn-primary">Next</button>
+            <button type="button" class="btn btn-danger">Cancel</button>
+        </div>
+    </form>
+</div>
+
+</body>
+</html>
